@@ -21,15 +21,15 @@ public class CreateAccountDemo {
         String mgpTestnetRpcUrl = "http://sh-test.vm.mgps.me:8888";
         EosRpcService eosRpcService = new EosRpcService( mgpTestnetRpcUrl );
 
-        long buyRamKbytes = 4300L;
+        long buyRamBytes = 4300L;
         String stakeNetAsset = "0.0004 MGP"; //The amount of tokens delegated for net bandwidth
         String stakeCpuAsset = "0.0004 MGP"; //The amount of tokens delegated for CPU bandwidth
-        long delaySec = 0L; // set the delay_sec seconds, defaults to 0s
+        long transfer = 0L; // whether or not to transfer the delegated assets to the new account
 
         try {
             Transaction account = eosRpcService.createAccount(privKey, creator, 
                 newAccount, newAccountOwnerPubKey, newAccountActivePubKey, 
-                buyRamKbytes, stakeNetAsset, stakeCpuAsset, delaySec);
+                buyRamBytes, stakeNetAsset, stakeCpuAsset, transfer);
 
         } catch (ApiException e) {
             System.err.println(e.getError().getError().getWhat());

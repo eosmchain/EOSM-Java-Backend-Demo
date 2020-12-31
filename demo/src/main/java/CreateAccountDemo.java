@@ -5,7 +5,7 @@ import io.eblock.eos4j.api.vo.transaction.Transaction;
 /**
  * @author hy
  */
-public class TestDemo {
+public class CreateAccountDemo {
 
     public static void main(String[] args) {
 

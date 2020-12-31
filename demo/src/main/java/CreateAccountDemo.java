@@ -16,7 +16,7 @@ public class CreateAccountDemo {
         String newAccountActivePubKey = newAccountOwnerPubKey; //can choose a different one. using the same one is for simplicity.
 
         String creator = "mgpheying111";    //The name of the account creating the new account
-        String creatorPrivKey = "5Jg9EGiVX7b8HSNyPGHVDTxKDwe4VusZhu4GDNZEmxJsovDKiFe";
+        String creatorPrivKey = "5Jg9EGiVX7b8HSNyPGHVDTxKDwe4VusZhu4GDNZEmxJsovDKiFe"; //Creator's private key to sign the transaction
         
         String mgpTestnetRpcUrl = "http://sh-test.vm.mgps.me:8888";
         EosRpcService eosRpcService = new EosRpcService( mgpTestnetRpcUrl );

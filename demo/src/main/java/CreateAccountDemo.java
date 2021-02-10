@@ -32,7 +32,9 @@ public class CreateAccountDemo {
                 buyRamBytes, stakeNetAsset, stakeCpuAsset, transfer);
 
         } catch (ApiException e) {
-            System.err.println(e.getError().getError().getWhat());
+            e.printStackTrace();
+            //System.err.println(e.getError().getError().getWhat());
+            System.out.println(JSON.toJSONString(e.getError().getError()));
 
         } catch (Exception e) {
             e.printStackTrace();

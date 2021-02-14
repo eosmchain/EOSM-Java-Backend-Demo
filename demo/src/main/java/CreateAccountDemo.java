@@ -22,8 +22,8 @@ public class CreateAccountDemo {
         EosRpcService eosRpcService = new EosRpcService( mgpTestnetRpcUrl );
 
         long buyRamBytes = 4300L;
-        String stakeNetAsset = "0.0004 MGP"; //The amount of tokens delegated for net bandwidth
-        String stakeCpuAsset = "0.0004 MGP"; //The amount of tokens delegated for CPU bandwidth
+        String stakeNetAsset = "0.0100 MGP"; //The amount of tokens delegated for net bandwidth, MGP coin precision is 4
+        String stakeCpuAsset = "0.0100 MGP"; //The amount of tokens delegated for CPU bandwidth, MGP coin precision is 4
         long transfer = 0L; // whether or not to transfer the delegated assets to the new account
 
         try {

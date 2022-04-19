@@ -1,7 +1,7 @@
 import io.eblock.eos4j.EosRpcService;
 import io.eblock.eos4j.api.exception.ApiException;
 import io.eblock.eos4j.api.vo.transaction.Transaction;
-
+import com.alibaba.fastjson.JSON;
 /**
  * @author hy
  */
@@ -27,7 +27,7 @@ public class CreateAccountDemo {
         long transfer = 0L; // whether or not to transfer the delegated assets to the new account
 
         try {
-            Transaction account = eosRpcService.createAccount(privKey, creator, 
+            Transaction account = eosRpcService.createAccount(creatorPrivKey, creator, 
                 newAccount, newAccountOwnerPubKey, newAccountActivePubKey, 
                 buyRamBytes, stakeNetAsset, stakeCpuAsset, transfer);
 

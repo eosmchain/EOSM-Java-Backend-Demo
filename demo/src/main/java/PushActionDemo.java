@@ -1,7 +1,7 @@
 import io.eblock.eos4j.api.exception.ApiException;
 import io.eblock.eos4j.api.exception.ErrorDetails;
 import netscape.javascript.JSObject;
-import org.springframework.web.client.RestTemplate;
+// import org.springframework.web.client.RestTemplate;
 import service.EosRpcMyService;
 
 import java.util.HashMap;

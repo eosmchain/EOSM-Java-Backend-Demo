@@ -18,7 +18,7 @@ public class CreateAccountDemo {
         String creator = "mgp.heyingss";    //The name of the account creating the new account
         String creatorPrivKey = "5Jy1B6Ejidkc5E7WLcGNMzBvLPx3X7NbszypVnpdddMYVdAwgc2"; //Creator's private key to sign the transaction
         
-        String mgpTestnetRpcUrl = "http://sh-test.vm.mgps.me:8888";
+        String mgpTestnetRpcUrl = "http://hk-t2.nchain.me:8888";
         EosRpcService eosRpcService = new EosRpcService( mgpTestnetRpcUrl );
 
         long buyRamBytes = 4300L;

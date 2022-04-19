@@ -14,6 +14,8 @@
             <groupId>com.eos4j</groupId>
             <artifactId>eos4j</artifactId>
             <version>1.0.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/eos4j-1.0.2.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
